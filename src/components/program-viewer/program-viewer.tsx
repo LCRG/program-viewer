@@ -3,8 +3,7 @@ import { Component, h } from '@stencil/core'
 
 @Component({
   tag: 'lcrg-program-viewer',
-  styleUrl: 'program-viewer.css',
-  shadow: true
+  styleUrl: 'program-viewer.css'
 })
 export class ProgramViewer {
 

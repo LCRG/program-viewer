@@ -2,8 +2,7 @@ import { Component, h } from '@stencil/core';
 
 @Component({
   tag: 'lcrg-program-grid',
-  styleUrl: 'program-grid.css',
-  shadow: true
+  styleUrl: 'program-grid.css'
 })
 export class ProgramGrid {
 
