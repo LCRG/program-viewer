@@ -15,6 +15,9 @@ export namespace Components {
     'name': string;
   }
   interface AppRoot {}
+  interface LcrgCourseCard {}
+  interface LcrgProgramGrid {}
+  interface LcrgProgramViewer {}
 }
 
 declare global {
@@ -37,10 +40,31 @@ declare global {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
   };
+
+  interface HTMLLcrgCourseCardElement extends Components.LcrgCourseCard, HTMLStencilElement {}
+  var HTMLLcrgCourseCardElement: {
+    prototype: HTMLLcrgCourseCardElement;
+    new (): HTMLLcrgCourseCardElement;
+  };
+
+  interface HTMLLcrgProgramGridElement extends Components.LcrgProgramGrid, HTMLStencilElement {}
+  var HTMLLcrgProgramGridElement: {
+    prototype: HTMLLcrgProgramGridElement;
+    new (): HTMLLcrgProgramGridElement;
+  };
+
+  interface HTMLLcrgProgramViewerElement extends Components.LcrgProgramViewer, HTMLStencilElement {}
+  var HTMLLcrgProgramViewerElement: {
+    prototype: HTMLLcrgProgramViewerElement;
+    new (): HTMLLcrgProgramViewerElement;
+  };
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement;
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
+    'lcrg-course-card': HTMLLcrgCourseCardElement;
+    'lcrg-program-grid': HTMLLcrgProgramGridElement;
+    'lcrg-program-viewer': HTMLLcrgProgramViewerElement;
   }
 }
 
@@ -50,11 +74,17 @@ declare namespace LocalJSX {
     'name'?: string;
   }
   interface AppRoot {}
+  interface LcrgCourseCard {}
+  interface LcrgProgramGrid {}
+  interface LcrgProgramViewer {}
 
   interface IntrinsicElements {
     'app-home': AppHome;
     'app-profile': AppProfile;
     'app-root': AppRoot;
+    'lcrg-course-card': LcrgCourseCard;
+    'lcrg-program-grid': LcrgProgramGrid;
+    'lcrg-program-viewer': LcrgProgramViewer;
   }
 }
 
@@ -67,6 +97,9 @@ declare module "@stencil/core" {
       'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
       'app-profile': LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+      'lcrg-course-card': LocalJSX.LcrgCourseCard & JSXBase.HTMLAttributes<HTMLLcrgCourseCardElement>;
+      'lcrg-program-grid': LocalJSX.LcrgProgramGrid & JSXBase.HTMLAttributes<HTMLLcrgProgramGridElement>;
+      'lcrg-program-viewer': LocalJSX.LcrgProgramViewer & JSXBase.HTMLAttributes<HTMLLcrgProgramViewerElement>;
     }
   }
 }
