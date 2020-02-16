@@ -15,7 +15,11 @@ export namespace Components {
     'name': string;
   }
   interface AppRoot {}
-  interface LcrgCourseCard {}
+  interface LcrgCourseCard {
+    'competencies': string;
+    'subtitle': string;
+    'title': string;
+  }
   interface LcrgProgramGrid {}
   interface LcrgProgramViewer {}
 }
@@ -74,7 +78,11 @@ declare namespace LocalJSX {
     'name'?: string;
   }
   interface AppRoot {}
-  interface LcrgCourseCard {}
+  interface LcrgCourseCard {
+    'competencies'?: string;
+    'subtitle'?: string;
+    'title'?: string;
+  }
   interface LcrgProgramGrid {}
   interface LcrgProgramViewer {}
 
