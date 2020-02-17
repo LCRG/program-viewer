@@ -11,7 +11,7 @@ export class ProgramViewer {
     return [
       <ion-header>
         <ion-toolbar color="primary">
-          <ion-title>Program Viewer</ion-title>
+          <ion-title>Bachelor of Science | Digital Media | Web & App Development</ion-title>
         </ion-toolbar>
       </ion-header>,
 

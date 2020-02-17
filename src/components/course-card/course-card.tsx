@@ -12,7 +12,7 @@ export class CourseCard {
 
   render() {
     return (
-      <ion-card color="secondary" button>
+      <ion-card color="tertiary" button>
         <ion-card-header>
           <ion-card-title>{this.title}</ion-card-title>
           <ion-card-subtitle>{this.subtitle}</ion-card-subtitle>
