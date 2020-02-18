@@ -1,4 +1,4 @@
-import { Component, Host, h } from "@stencil/core";
+import { Component, h } from "@stencil/core";
 
 @Component({
   tag: "lcrg-program-grid",
@@ -45,35 +45,20 @@ export class ProgramGrid {
         </ion-row>
         <ion-row>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 2120"
-              subtitle="Web Essentials"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 2120"></lcrg-course-card>
           </ion-col>
           <ion-col size="1.5"></ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 2740"
-              subtitle="Principles of Web Languages"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 2740"></lcrg-course-card>
           </ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 2780"
-              subtitle="Web Tools and Frameworks I"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 2780"></lcrg-course-card>
           </ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 3750"
-              subtitle="Media Traffic and Analytics"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 3750"></lcrg-course-card>
           </ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 3740"
-              subtitle="Web Content Management"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 3740"></lcrg-course-card>
           </ion-col>
           <ion-col></ion-col>
           <ion-col></ion-col>
@@ -82,95 +67,56 @@ export class ProgramGrid {
         <ion-row>
           <ion-col size="1.5"></ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 2250"
-              subtitle="Digital Design Essentials"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 2250"></lcrg-course-card>
           </ion-col>
           <ion-col size="1.5"></ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 221R"
-              subtitle="Digital Design Practicum"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 221R"></lcrg-course-card>
           </ion-col>
         </ion-row>
 
         <ion-row>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 1220"
-              subtitle="Digital Design Essentials"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 1220"></lcrg-course-card>
           </ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 1230"
-              subtitle="Interaction Design Essentials"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 1230"></lcrg-course-card>
           </ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 2240"
-              subtitle="Interaction Design"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 2240"></lcrg-course-card>
           </ion-col>
         </ion-row>
 
         <ion-row>
           <ion-col size="1.5"></ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 1240"
-              subtitle="Communicating Digital Design"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 1240"></lcrg-course-card>
           </ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 2341"
-              subtitle="Digital Output for Mobile Media"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 2341"></lcrg-course-card>
           </ion-col>
         </ion-row>
 
         <ion-row>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 2120"
-              subtitle="Scripting for Internet Technologies"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 1600"></lcrg-course-card>
           </ion-col>
           <ion-col size="1.5"></ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 2760"
-              subtitle="Web Languages I"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 2760"></lcrg-course-card>
           </ion-col>
           <ion-col size="1.5"></ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 3760"
-              subtitle="Web Languages II"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 3760"></lcrg-course-card>
           </ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 3780"
-              subtitle="Web Tools and Frameworks II"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 3780"></lcrg-course-card>
           </ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 3790"
-              subtitle="Rich Internet Application Development I"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 3790"></lcrg-course-card>
           </ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 4790"
-              subtitle="Rich Internet Application Development II"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 4790"></lcrg-course-card>
           </ion-col>
         </ion-row>
 
@@ -182,16 +128,10 @@ export class ProgramGrid {
           <ion-col size="1.5"></ion-col>
           <ion-col size="1.5"></ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 4310"
-              subtitle="Senior Capstone I"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 4310"></lcrg-course-card>
           </ion-col>
           <ion-col size="1.5">
-            <lcrg-course-card
-              title="DGM 4410"
-              subtitle="Senior Capstone II"
-            ></lcrg-course-card>
+            <lcrg-course-card courseCode="DGM 4410"></lcrg-course-card>
           </ion-col>
         </ion-row>
 

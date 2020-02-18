@@ -1,27 +1,57 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, State } from "@stencil/core";
+import gql from "graphql-tag";
+
+/* const COURSE_CODE_QUERY = gql`
+  query byCourseCode {
+    courseByCourseCode(courseCode: "DGM 1600") {
+      name
+      courseCode
+      description
+      additionalProperties
+    }
+  }
+`;
+
+const ALL_POSTS = gql`
+  query allPosts {
+    posts {
+      title
+      author {
+        firstName
+        lastName
+      }
+    }
+  }
+`; */
+
+const COMPETENCIES = gql`
+  query allCompetencies {
+    Competencies {
+      name
+    }
+  }
+`;
 
 @Component({
-  tag: 'lcrg-course-card',
-  styleUrl: 'course-card.css'
+  tag: "lcrg-course-card",
+  styleUrl: "course-card.css"
 })
 export class CourseCard {
+  @Prop() courseCode: string;
 
-  @Prop() title: string;
-  @Prop() subtitle: string;
-  @Prop() competencies: string;
+  @State() code: string;
+  @State() name: string;
+  @State() addProps: string;
 
   render() {
-    return (
-      <ion-card color="tertiary" button>
-        <ion-card-header>
-          <ion-card-title>{this.title}</ion-card-title>
-          <ion-card-subtitle>{this.subtitle}</ion-card-subtitle>
-        </ion-card-header>
-        <ion-card-content>
-          {this.competencies}
-        </ion-card-content>
-      </ion-card>
-    )
+    return <p>Hi There</p>;
   }
-
 }
+
+/* <ion-card color="tertiary" button>
+                  <ion-card-header>
+                    <ion-card-title>{post.title}</ion-card-title>
+                    <ion-card-subtitle>{post.author.firstName}</ion-card-subtitle>
+                  </ion-card-header>
+                  <ion-card-content>{post.author.lastName}</ion-card-content>
+                </ion-card> */
